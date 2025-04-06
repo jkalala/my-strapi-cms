@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "financial_documents",
+  "info": {
+    "singularName": "financial-document",
+    "pluralName": "financial-documents",
+    "displayName": "financiaReports",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "period": {
+      "type": "string"
+    },
+    "uploadDate": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isAnnual": {
+      "type": "boolean"
+    }
+  }
+}

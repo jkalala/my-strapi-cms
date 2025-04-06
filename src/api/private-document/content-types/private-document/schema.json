@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "private_documents",
+  "info": {
+    "singularName": "private-document",
+    "pluralName": "private-documents",
+    "displayName": "privateDocuments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "updloadDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Report",
+        "Communique",
+        "Policy",
+        "PressRelease",
+        "KP"
+      ]
+    }
+  }
+}

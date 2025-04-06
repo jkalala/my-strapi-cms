@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "budget": {
+      "type": "decimal"
+    },
+    "statusProject": {
+      "type": "enumeration",
+      "enum": [
+        "planned",
+        "in-progress",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "endDate": {
+      "type": "date"
+    }
+  }
+}
